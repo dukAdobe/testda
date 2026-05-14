@@ -1,0 +1,101 @@
+.contact-us-form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-us-form-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.contact-us-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-us-form-group label {
+  font-size: var(--body-font-size-xs);
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.contact-us-form-required {
+  color: #d7373f;
+}
+
+.contact-us-form-group input,
+.contact-us-form-group textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #c8c8c8;
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--body-font-size-xs);
+  line-height: 1.5;
+  transition: border-color 0.15s ease;
+}
+
+.contact-us-form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-us-form-group input:focus,
+.contact-us-form-group textarea:focus {
+  outline: none;
+  border-color: var(--link-color);
+  box-shadow: 0 0 0 3px rgb(59 99 251 / 15%);
+}
+
+.contact-us-form-group input[aria-invalid="true"],
+.contact-us-form-group textarea[aria-invalid="true"] {
+  border-color: #d7373f;
+}
+
+.contact-us-form-group input[aria-invalid="true"]:focus,
+.contact-us-form-group textarea[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px rgb(215 55 63 / 15%);
+}
+
+.contact-us-form-error {
+  font-size: var(--body-font-size-xs);
+  color: #d7373f;
+}
+
+.contact-us-form-submit-group {
+  margin-top: 4px;
+}
+
+.contact-us-form-submit-group .button {
+  min-width: 160px;
+}
+
+.contact-us-form-status {
+  padding: 14px 18px;
+  border-radius: 4px;
+  font-size: var(--body-font-size-xs);
+  line-height: 1.5;
+}
+
+.contact-us-form-status-success {
+  background-color: #f0faf3;
+  border: 1px solid #2d9d57;
+  color: #1a6138;
+}
+
+.contact-us-form-status-error {
+  background-color: #fff4f4;
+  border: 1px solid #d7373f;
+  color: #8b1d23;
+}
+
+@media (width >= 600px) {
+  .contact-us-form-submit-group {
+    align-items: flex-start;
+  }
+}

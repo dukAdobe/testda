@@ -1,0 +1,50 @@
+.news-releases-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-releases-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  padding: 20px 0;
+  border-bottom: 1px solid #dadada;
+}
+
+.news-releases-item:first-child {
+  border-top: 1px solid #dadada;
+}
+
+.news-releases-date {
+  display: block;
+  font-size: var(--body-font-size-xs);
+  color: var(--dark-color);
+}
+
+.news-releases-headline {
+  margin: 0;
+  font-size: var(--body-font-size-s);
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+.news-releases-loading,
+.news-releases-error {
+  padding: 20px 0;
+  color: var(--dark-color);
+  font-size: var(--body-font-size-xs);
+}
+
+.news-releases-error {
+  color: #d7373f;
+}
+
+@media (width >= 600px) {
+  .news-releases-item {
+    grid-template-columns: 180px 1fr;
+    align-items: baseline;
+    gap: 24px;
+  }
+}
